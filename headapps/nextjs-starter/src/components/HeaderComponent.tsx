@@ -1,8 +1,5 @@
 import { JSX } from 'react';
-import {
-  Text,
-  RichText, Field,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text, RichText, Field } from '@sitecore-jss/sitecore-jss-nextjs';
 
 interface HeaderComponentProps {
   fields: {
@@ -17,7 +14,7 @@ export const Default = (props: HeaderComponentProps): JSX.Element => {
       My most beautiful header component
       <div className="component-content">
         <Text field={props.fields.title}></Text>
-          <RichText field={props.fields.body}></RichText>
+        <RichText field={props.fields.body}></RichText>
       </div>
     </div>
   );
